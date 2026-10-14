@@ -1,0 +1,13 @@
+name: CICD
+
+on:
+  push:
+    branches: [main]
+
+job:
+  demo:
+    runs-on: ununtu-latest
+
+    steps:
+      -name: greetings
+      run: echo "hello world"
